@@ -7,9 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.alain.cursos.mdcomponents.adapters.ComponentAdapter;
+import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
+import com.alain.cursos.mdcomponents.fragments.ButtonNavigationBarFragment;
 import com.alain.cursos.mdcomponents.utils.Component;
 import com.alain.cursos.mdcomponents.utils.Constants;
 import com.alain.cursos.mdcomponents.utils.OnClickListener;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private void configAdapter() {
         mAdapter = new ComponentAdapter(new ArrayList<>(), this);
         mAdapter.add(ButtonFragment.getmInstance());
+        mAdapter.add(ButtonNavigationBarFragment.getmInstance());
     }
 
     private void configRecyclerView() {

@@ -11,7 +11,8 @@ package com.alain.cursos.mdcomponents.utils;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.alain.cursos.mdcomponents.ButtonFragment;
+import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
+import com.alain.cursos.mdcomponents.fragments.ButtonNavigationBarFragment;
 
 public class CommonUtils {
 
@@ -32,6 +33,9 @@ public class CommonUtils {
                 break;
 
             //STATIC
+            case ButtonNavigationBarFragment.TAG:
+                fragment = new ButtonNavigationBarFragment();
+                break;
         }
 
         return fragment;
