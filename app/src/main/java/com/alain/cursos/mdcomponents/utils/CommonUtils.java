@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
 import com.alain.cursos.mdcomponents.fragments.ButtonNavigationBarFragment;
+import com.alain.cursos.mdcomponents.fragments.SnackBarFragment;
 
 public class CommonUtils {
 
@@ -36,6 +37,11 @@ public class CommonUtils {
             case ButtonNavigationBarFragment.TAG:
                 fragment = new ButtonNavigationBarFragment();
                 break;
+
+            case SnackBarFragment.TAG:
+                fragment = new SnackBarFragment();
+                break;
+
         }
 
         return fragment;
