@@ -9,12 +9,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.alain.cursos.mdcomponents.adapters.ComponentAdapter;
 import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
 import com.alain.cursos.mdcomponents.fragments.ButtonNavigationBarFragment;
+import com.alain.cursos.mdcomponents.fragments.FloatingActionButtonFragment;
 import com.alain.cursos.mdcomponents.fragments.SnackBarFragment;
 import com.alain.cursos.mdcomponents.fragments.TextFieldFragment;
 import com.alain.cursos.mdcomponents.utils.Component;
 import com.alain.cursos.mdcomponents.utils.Constants;
 import com.alain.cursos.mdcomponents.utils.OnClickListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mAdapter.add(ButtonNavigationBarFragment.getmInstance());
         mAdapter.add(SnackBarFragment.getmInstance());
         mAdapter.add(TextFieldFragment.getmInstance());
+        mAdapter.add(FloatingActionButtonFragment.getmInstance());
     }
 
     private void configRecyclerView() {
